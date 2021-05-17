@@ -5,10 +5,11 @@ import { ethers } from 'hardhat';
 import { Interface } from 'ethers/lib/utils';
 
 describe('Test Set Name', () => {
-    let genericProxyFactoryContract: ContractFactory
+    let exampleContract: Contract
 
-    beforeAll(async () =>{
-
+    beforeEach(async () =>{
+        const exampleContractFactory: ContractFactory = await ethers.getContractFactory("ExampleContract")
+        exampleContract = await exampleContractFactory.deploy()
     })
 
     it('Test Name', async () => {

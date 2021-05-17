@@ -1,30 +1,17 @@
-# PoolTogether Generic Minimal Proxy Factory
+# PoolTogether Contracts Template
 
-[![Coverage Status](https://coveralls.io/repos/github/pooltogether/pooltogether-proxy-factory/badge.svg?branch=master)](https://coveralls.io/github/pooltogether/pooltogether-proxy-factory?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/pooltogether/<NAME_OF_NEW_REPO>/badge.svg?branch=master)](https://coveralls.io/github/pooltogether/pooltogether-proxy-factory?branch=master)
 
-[![CircleCI](https://circleci.com/gh/pooltogether/pooltogether-proxy-factory.svg?style=svg)](https://circleci.com/gh/pooltogether/pooltogether-proxy-factory)
-
-PoolTogether uses the [EIP-1167](https://eips.ethereum.org/EIPS/eip-1167) Minimal Proxy Factory throughout its contracts.
-This repo provides this contract pattern as an [npm package](https://www.npmjs.com/package/@pooltogether/pooltogether-proxy-factory) for use in other repo's deployment scripts.
+![Tests](https://github.com/pooltogether/<NAME_OF_NEW_REPO>/actions/workflows/main.yml/badge.svg)
 
 # Usage
-Add package to repo using:
-`yarn add @pooltogether/pooltogether-proxy-factory`
+1. Clone this repo 
+1. Create repo using Github GUI
+1. Set remote repo (`git remote add origin git@github.com:pooltogether/<NAME_OF_NEW_REPO>.git`),
+1. Checkout a new branch (`git checkout -b name_of_new_branch`) 
+1. Begin implementing as approriate.
+1. Update this README
 
-Using hardhat and ethers.js, add the GenericProxyFactory singleton for the network of choice under the `namedAccounts` in your `hardhat.config.js`.
-
-Deploy a new Proxy Contract: 
-```javascript
-    let { genericProxyFactoryAddress } = await getNamedAccounts()
-    genericProxyFactoryContract = await ethers.getContractAt("GenericProxyFactory", genericProxyFactoryAddress)
-
-    // deploy using create
-    const implementationAddress = "<address>"
-    const dataToCallOnNewProxy = "0x"
-
-    const newProxyContractResult = await genericProxyFactory.create(implementationAddress, dataToCallOnNewProxy)
-
-```
 
 # Installation
 Install the repo and dependencies by running:

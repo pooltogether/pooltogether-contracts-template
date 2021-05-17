@@ -8,7 +8,6 @@ import 'solidity-coverage';
 
 import { HardhatUserConfig } from 'hardhat/config';
 
-import * as verifyTask from './scripts/verify';
 import networks from './hardhat.network';
 
 const optimizerEnabled = !process.env.OPTIMIZER_DISABLED;
@@ -50,6 +49,6 @@ const config: HardhatUserConfig = {
   }
 };
 
-verifyTask;
+
 
 export default config;
