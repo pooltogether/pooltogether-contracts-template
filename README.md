@@ -13,6 +13,16 @@
 1. Update this README
 
 
+# Preset Packages
+## Generic Proxy Factory
+The minimal proxy factory is a powerful pattern used throughout PoolTogethers smart contracts. A [typescript package](https://www.npmjs.com/package/@pooltogether/pooltogether-proxy-factory-package) is available to use a generic deployed instance. This is typically used in the deployment script. 
+
+
+## Generic Registry
+The [generic registry](https://www.npmjs.com/package/@pooltogether/pooltogether-generic-registry) is a iterable singly linked list data structure that is commonly used throughout PoolTogethers contracts. Consider using this where appropriate or deploying in a seperate repo such as the (Prize Pool Registry)[https://github.com/pooltogether/pooltogether-prizepool-registry.
+
+
+
 # Installation
 Install the repo and dependencies by running:
 `yarn`
