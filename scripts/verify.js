@@ -154,13 +154,7 @@ async function run() {
 
   info(`Verifying proxy factory instances...`)
 
-  await verifyProxyFactoryInstance('CompoundPrizePoolProxyFactory')
-  await verifyProxyFactoryInstance('ControlledTokenProxyFactory')
-  await verifyProxyFactoryInstance('MultipleWinnersProxyFactory')
-  await verifyProxyFactoryInstance('StakePrizePoolProxyFactory')
-  await verifyProxyFactoryInstance('TicketProxyFactory')
-  await verifyProxyFactoryInstance('TokenFaucetProxyFactory')
-  await verifyProxyFactoryInstance('YieldSourcePrizePoolProxyFactory')
+  // await verifyProxyFactoryInstance('CompoundPrizePoolProxyFactory')
 
   success('Done!')
 }
