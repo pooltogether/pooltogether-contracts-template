@@ -53,7 +53,6 @@
   "files": [
     "LICENSE",
     "abis/**",
-    "build/**",
     "artifacts/**",
     "contracts/**",
     "deployments/**",
