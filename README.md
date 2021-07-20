@@ -5,13 +5,16 @@
 ![Tests](https://github.com/pooltogether/<NAME_OF_NEW_REPO>/actions/workflows/main.yml/badge.svg)
 
 # Usage
-1. Clone this repo 
+1. Clone this repo: `git clone git@github.com:pooltogether/pooltogether-contracts-template.git <DESTINATION REPO>`
 1. Create repo using Github GUI
 1. Set remote repo (`git remote add origin git@github.com:pooltogether/<NAME_OF_NEW_REPO>.git`),
 1. Checkout a new branch (`git checkout -b name_of_new_branch`) 
-1. Begin implementing as approriate.
+1. Begin implementing as appropriate.
 1. Update this README
 
+
+## Usage
+This repo is setup to compile (`nvm use && yarn compile`) and successfully pass tests (`yarn test`)
 
 # Preset Packages
 ## Generic Proxy Factory
