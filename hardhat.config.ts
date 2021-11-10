@@ -1,5 +1,8 @@
 import '@nomiclabs/hardhat-etherscan';
+import '@typechain/hardhat';
+import '@nomiclabs/hardhat-ethers';
 import '@nomiclabs/hardhat-waffle';
+import "@typechain/hardhat";
 import 'hardhat-abi-exporter';
 import 'hardhat-deploy';
 import 'hardhat-deploy-ethers';
@@ -17,6 +20,10 @@ const config: HardhatUserConfig = {
     path: './abis',
     clear: true,
     flat: true,
+  },
+  typechain: {
+    outDir: "types",
+    target: "ethers-v5",
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,
@@ -38,7 +45,7 @@ const config: HardhatUserConfig = {
   },
   networks,
   solidity: {
-    version: '0.6.12',
+    version: '0.8.10',
     settings: {
       optimizer: {
         enabled: optimizerEnabled,
