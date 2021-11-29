@@ -1,6 +1,6 @@
 # PoolTogether Contracts Template
 
-[![Coverage Status](https://coveralls.io/repos/github/pooltogether/<NAME_OF_NEW_REPO>/badge.svg?branch=master)](https://coveralls.io/github/pooltogether/pooltogether-proxy-factory?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/pooltogether/pooltogether-contracts-template/badge.svg?branch=master)](https://coveralls.io/github/pooltogether/pooltogether-contracts-template?branch=master)
 
 ![Tests](https://github.com/pooltogether/pooltogether-contracts-template/actions/workflows/main.yml/badge.svg)
 

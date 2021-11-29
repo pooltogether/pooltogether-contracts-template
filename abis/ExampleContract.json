@@ -18,6 +18,19 @@
     "type": "event"
   },
   {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "c__0x4aff4997",
+        "type": "bytes32"
+      }
+    ],
+    "name": "c_0x4aff4997",
+    "outputs": [],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
     "inputs": [],
     "name": "callMe",
     "outputs": [],
