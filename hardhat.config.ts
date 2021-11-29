@@ -1,23 +1,23 @@
-import '@nomiclabs/hardhat-etherscan';
-import '@typechain/hardhat';
-import '@nomiclabs/hardhat-ethers';
-import '@nomiclabs/hardhat-waffle';
+import "@nomiclabs/hardhat-etherscan";
 import "@typechain/hardhat";
-import 'hardhat-abi-exporter';
-import 'hardhat-deploy';
-import 'hardhat-deploy-ethers';
-import 'hardhat-gas-reporter';
-import 'solidity-coverage';
+import "@nomiclabs/hardhat-ethers";
+import "@nomiclabs/hardhat-waffle";
+import "@typechain/hardhat";
+import "hardhat-abi-exporter";
+import "hardhat-deploy";
+import "hardhat-deploy-ethers";
+import "hardhat-gas-reporter";
+import "solidity-coverage";
 
-import { HardhatUserConfig } from 'hardhat/config';
+import { HardhatUserConfig } from "hardhat/config";
 
-import networks from './hardhat.network';
+import networks from "./hardhat.network";
 
 const optimizerEnabled = !process.env.OPTIMIZER_DISABLED;
 
 const config: HardhatUserConfig = {
   abiExporter: {
-    path: './abis',
+    path: "./abis",
     clear: true,
     flat: true,
   },
@@ -29,7 +29,7 @@ const config: HardhatUserConfig = {
     apiKey: process.env.ETHERSCAN_API_KEY,
   },
   gasReporter: {
-    currency: 'USD',
+    currency: "USD",
     gasPrice: 100,
     enabled: process.env.REPORT_GAS ? true : false,
     coinmarketcap: process.env.COINMARKETCAP_API_KEY,
@@ -45,17 +45,15 @@ const config: HardhatUserConfig = {
   },
   networks,
   solidity: {
-    version: '0.8.10',
+    version: "0.8.6",
     settings: {
       optimizer: {
         enabled: optimizerEnabled,
         runs: 200,
       },
-      evmVersion: 'istanbul',
+      evmVersion: "istanbul",
     },
-  }
+  },
 };
-
-
 
 export default config;
