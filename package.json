@@ -24,6 +24,7 @@
     "run-fork": "yarn impersonate-accounts && yarn distribute-ether && yarn create-prize-pool",
     "remove-logs": "yarn run hardhat remove-logs",
     "test": "yarn clean && HIDE_DEPLOY_LOG=true OPTIMIZER_DISABLED=true hardhat test",
+    "typechain": "typechain --target=ethers-v5 \"./abis/*.json\" --out-dir \"./types\"",
     "prepack": "yarn compile"
   },
   "devDependencies": {
