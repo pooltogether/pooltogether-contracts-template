@@ -14,7 +14,7 @@
     "verify": "hardhat etherscan-verify --license GPL-3.0 --solc-input --network",
     "etherscan-verify": "hardhat etherscan:verify --network",
     "etherscan-verify-polygon": "hardhat --config hardhat.config.polygon.js run ./scripts/verify.js --network",
-    "format": "prettier --config .prettierrc --write **/*.ts",
+    "format": "prettier --config .prettierrc --write \"**/*.{ts,js}\" \"contracts/**/*.sol\"",
     "format:file": "prettier --config .prettierrc --write",
     "hint": "solhint \"contracts/**/*.sol\"",
     "start-fork": "FORK_ENABLED=true hardhat node --no-reset --no-deploy",
@@ -26,7 +26,6 @@
     "test": "yarn clean && HIDE_DEPLOY_LOG=true OPTIMIZER_DISABLED=true hardhat test",
     "prepack": "yarn compile"
   },
-  "dependencies": {},
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "2.0.4",
     "@nomiclabs/hardhat-etherscan": "3.0.0",
@@ -52,6 +51,7 @@
     "hardhat-gas-reporter": "1.0.7",
     "hardhat-log-remover": "2.0.2",
     "prettier": "2.5.1",
+    "prettier-plugin-solidity": "1.0.0-beta.19",
     "solc": "0.8.6",
     "solc-0.8": "npm:solc@0.8.6solc",
     "solhint": "3.3.6",
