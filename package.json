@@ -1,6 +1,6 @@
 {
   "name": "@pooltogether/pooltogether-contracts-template",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.1",
   "description": "PoolTogether REPO-NAME",
   "main": "index.js",
   "license": "GPL-3.0",
