@@ -5,6 +5,7 @@
   "main": "index.js",
   "license": "GPL-3.0",
   "scripts": {
+    "prepare": "husky install",
     "clean": "rm -rf cache/ artifacts/",
     "compile": "hardhat --show-stack-traces --max-memory 8192 compile",
     "coverage": "HIDE_DEPLOY_LOG=true OPTIMIZER_DISABLED=true hardhat coverage",
@@ -50,6 +51,7 @@
     "hardhat-ethers": "1.0.1",
     "hardhat-gas-reporter": "1.0.7",
     "hardhat-log-remover": "2.0.2",
+    "husky": "8.0.1",
     "prettier": "2.5.1",
     "prettier-plugin-solidity": "1.0.0-beta.19",
     "solc": "0.8.6",
